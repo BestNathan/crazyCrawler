@@ -1,13 +1,16 @@
 {
   "name": "crazy-crawler",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "description": "crawl everything by this",
   "main": "index.js",
+  "keywords": [
+    "crawler"
+  ],
   "scripts": {
-    "start": "node app.js"
+    "example": "node ./example/app.js"
   },
   "author": {
-    "name": "nathan"
+    "name": "bestnathan"
   },
   "dependencies": {
     "axios": "^0.17.1",
