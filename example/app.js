@@ -1,5 +1,5 @@
 "use strict";
-const { Crawler, Task, Model } = require("../index");
+const { CrazyCrawler, Task, Model } = require("../index");
 
 class gituhbModel extends Model {
   constructor(field) {
@@ -10,15 +10,15 @@ class gituhbModel extends Model {
   }
 }
 
-const crawler = new Crawler({
+const crawler = new CrazyCrawler({
   maxConnection: 5,
   maxTask: 0
 });
 
-const jsonHandler = function(json) {
+const jsonHandler = function() {
   return (
-    json.dataMap.prizeInfoList &&
-    json.dataMap.prizeInfoList.map(item => {
+    this.data.dataMap.prizeInfoList &&
+    this.data.dataMap.prizeInfoList.map(item => {
       return item;
     })
   );
