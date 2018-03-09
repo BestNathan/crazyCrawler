@@ -1,6 +1,6 @@
 {
   "name": "crazy-crawler",
-  "version": "0.1.13",
+  "version": "0.2.0",
   "description": "crawl everything by this",
   "main": "index.js",
   "keywords": [
