@@ -1,17 +1,13 @@
+let a = [1, 2]
 
-function transBefore(lastTask, task, state, beforeTask) {
-    return function __hahaha() {
-		beforeTask({ lastTask, task, state })
-	}
-	
+function test() {
+	a.reduce(() => {
+		throw new Error('aa')
+	})
 }
 
-function a({ lastTask, task, state }) {
-	return 'haha'
+try {
+	test()
+} catch (e) {
+	console.log(e.message)
 }
-
-console.log(a.name)
-
-a = transBefore(a)
-
-console.log(a.name)
