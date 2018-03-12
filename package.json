@@ -1,13 +1,14 @@
 {
   "name": "crazy-crawler",
-  "version": "0.1.13",
+  "version": "0.2.0",
   "description": "crawl everything by this",
   "main": "index.js",
   "keywords": [
     "crawler"
   ],
   "scripts": {
-    "example": "node ./example/app.js"
+    "example": "node ./example/app.js",
+    "coverage": "nyc mocha -t 4000"
   },
   "author": {
     "name": "bestnathan"
@@ -21,5 +22,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/BestNathan/crazyCrawler"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.4",
+    "nyc": "^11.4.1"
   }
 }

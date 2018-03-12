@@ -1,9 +1,11 @@
-const CrazyCrawler = require('./lib/crazyCrawler')
+const CrazyCrawler = require('./lib/crawlerEngine')
 const Task = require('./lib/task')
-const Model = require('./lib/model')
+const TaskChain = require('./lib/taskChain')
+const TaskState = require('./lib/taskState')
 
 module.exports = {
-    CrazyCrawler,
-    Task,
-    Model
+	CrazyCrawler,
+	TaskState,
+	Task,
+	TaskChain
 }
