@@ -7,7 +7,6 @@
     "crawler"
   ],
   "scripts": {
-    "example": "node ./example/app.js",
     "coverage": "nyc mocha -t 4000"
   },
   "author": {
