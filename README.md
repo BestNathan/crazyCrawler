@@ -7,7 +7,7 @@ crawl everything by this
 ## install(安装)
 
 ```bash
-npm install crazyCrawler@2.0
+npm install crazyCrawler
 ```
 
 ## require(引用)
