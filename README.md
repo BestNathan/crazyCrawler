@@ -7,13 +7,13 @@ crawl everything by this
 ## install(安装)
 
 ```bash
-npm install crazyCrawler
+npm install crazy-crawler
 ```
 
 ## require(引用)
 
 ```js
-const { CrazyCrawler, Task, TaskChain } = require('crazyCrawler')
+const { CrazyCrawler, Task, TaskChain } = require('crazy-crawler')
 
 const crawler = new CrazyCrawler({ maxTask: 5, sleep: 100 })
 
