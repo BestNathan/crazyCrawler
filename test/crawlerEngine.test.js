@@ -53,7 +53,6 @@ describe('crawler engine test suite', () => {
 	describe('engine test with repeat task', () => {
 		it('should run correctly', done => {
 			const crawler = new CrazyCrawler({})
-			crawler.setMaxTask(4)
 			crawler.setSleep(100)
 			let counter = 0
 			crawler.on('done', () => {
@@ -65,7 +64,6 @@ describe('crawler engine test suite', () => {
 				url,
 				handler: function(res) {
 					counter++
-					crawler._downloader.setSleep(100)
 					expect(res.data).to.be.an('object')
 				},
 				repeat: true,

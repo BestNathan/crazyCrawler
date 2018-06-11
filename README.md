@@ -1,4 +1,4 @@
-# crazyCrawler 2.0
+# crazyCrawler 3.0
 
 crawl everything by this
 
@@ -45,7 +45,7 @@ const task = new Task({
 crawler.queueTask(task).run() // run crawler
 ```
 
-## craete crawler taskChain (创建爬虫任务链)
+## create crawler taskChain (创建爬虫任务链)
 
 ```js
 const taskChain = new TaskChain()
